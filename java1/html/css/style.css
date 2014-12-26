@@ -1,0 +1,28 @@
+* {
+margin: 0px; 
+padding: 0px; 
+}
+.header{
+width:800px;
+height: 137px;
+margin: 0 auto;
+text-align:center;
+}
+.content{
+	margin: 0 auto;
+	width:800px;	
+}
+.opisanie{
+	width:500px;
+	margin: 0px; 
+	padding: 0px; 
+	//float:left;	
+	
+}
+p {
+    line-height: 1.5;
+}
+
+.images{
+	float:left;
+	}

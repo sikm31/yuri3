@@ -1,0 +1,58 @@
+*{
+	/*width:1020px;*/
+}
+
+body {
+	/*margin-left:auto;
+	margin-right:auto;*/
+		
+}
+
+#Headerlogo {
+	/*height: 70px;
+	background:#191919;
+	border:1px solid #000;*/
+}
+
+.logol {
+	width:243px;
+	height:31px;
+	background:url(../image/logoie6.jpg) no-repeat;
+}
+
+#Nav_head {
+	background:url(../image/bgheader3.png) repeat-x;
+	
+}
+
+#Nav {
+	/*clear:left;
+	height:60px;*/
+	background:url(../image/bgmenu.png) repeat-x;
+	border-top:1px solid #000;
+	
+}
+
+#Header {
+	/*height:300px;*/
+	background:url(../image/bgheader2.png) repeat-x;
+	
+}
+
+.headtext {
+	padding-top:70px;	
+}
+
+ul.menu {
+	font-style:bold;
+	padding-top:20px;
+	padding-left:55px;
+	list-style: none;
+	
+}
+
+.block {
+	float:left;
+	margin-left:50px;
+		
+}

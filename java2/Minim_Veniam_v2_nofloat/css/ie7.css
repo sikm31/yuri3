@@ -1,0 +1,49 @@
+ul/*.logo*/ li {
+	display: inline;
+	vertical-align:middle;
+	
+}
+
+.button {
+	margin-top:20px;
+	vertical-align:auto;
+	padding:7px 33px 7px 3px;
+	
+	
+}
+.image {
+	padding-bottom:25px;
+	/*border:1px solid #C03;*/
+	margin-left:100px;
+		
+}
+
+.buthead {
+
+	
+}
+
+/*ul.headm li {
+	display: inline;
+	
+}*/
+.headtext h1 {
+	padding-bottom:10px;
+	
+}
+
+/*ul.contm li { 
+	display: inline; 
+	
+}
+
+ul.contl li { 
+	display: inline; 
+	
+}
+ul.menu li {
+	
+	display: inline;
+	
+}
+*/

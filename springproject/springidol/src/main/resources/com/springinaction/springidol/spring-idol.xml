@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <!--<start id="duke_bean" />-->
+       <bean id="duke"
+             class="com.springinaction.springidol.Juggler">
+              <constructor-arg value="15" />
+       </bean>
+       <!--<end id="duke_bean" />-->
+
+       <bean id="poeticDuke"
+             class="com.springinaction.springidol.PoeticJuggler">
+              <constructor-arg value="15" />
+              <constructor-arg ref="sonnet29" />
+       </bean>
+       <!--<end id="poeticduke_bean" />-->
+
+       <!--<start id="kenny_bean" />-->
+       <bean id="kenny"
+             class="com.springinaction.springidol.Instrumentalist">
+              <property name="song" value="Jingle Bells" />
+       </bean>
+       <!--<end id="kenny_bean" />-->
+
+    <!--<start id="kenny2_bean" />-->
+    <bean id="kenny2"
+          class="com.springinaction.springidol.Instrumentalist">
+        <property name="song" value="Jingle Bells" />
+        <property name="instrument" ref="saxophone" />
+    </bean>
+    <!--<end id="kenny2_bean" />-->
+
+    <!--<start id="piano_bean"-->
+    <bean id="piano"
+          class="com.springinaction.springidol.Piano"/>
+    <!--<end id="piano_bean"-->
+
+    <!--<start id="kenny3_bean" />-->
+    <bean id="kenny3"
+          class="com.springinaction.springidol.Instrumentalist">
+        <property name="song" value="Jingle Bells" />
+        <property name="instrument" ref="piano" />
+    </bean>
+    <!--<end id="kenny3_bean" />-->
+
+       <!--<start id="sonnet29_bean" />-->
+       <bean id="sonnet29"
+             class="com.springinaction.springidol.Sonnet29" />
+       <!--<end id="sonnet29_bean" />-->
+
+       <!-- start id=theStage_bean -->
+       <bean id="theStage"
+             class="com.springinaction.springidol.Stage" factory-method="getInstance" />
+
+       <!-- end id=theStage_bean -->
+
+       <!--<start id="saxophone_bean" />-->
+       <bean id="saxophone"
+          class="com.springinaction.springidol.Saxophone" />
+       <!--<end id="saxophone_bean" />-->
+
+    <!--<start id="hank_bean" />-->
+        <bean id="hank"
+              class="com.springinaction.springidol.OneManBand">
+            <property name="instruments">
+                <list>
+                    <ref bean="piano"/>
+                    <ref bean="saxophone"/>
+                </list>
+            </property>
+
+        </bean>
+    <!--<end id="hank_bean" />-->
+
+    <!--<start id="carl_bean"/>-->
+    <bean id="carl"
+          class="com.springinaction.springidol.Instrumentalist">
+        <property name="song" value="#{kenny.song}" />
+    </bean>
+    <!--<end id="carl_bean"/>-->
+
+
+</beans>

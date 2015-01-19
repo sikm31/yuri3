@@ -22,9 +22,9 @@ public class CalculateSpring {
         ApplicationContext context = new ClassPathXmlApplicationContext("beanscalculate.xml");
         BeanFactory factory = (BeanFactory) context;
         CalculateSpring calc =(CalculateSpring) factory.getBean("opsbean");
-        calc.execute(args);
+        calc.execute();
     }
-    public void execute(String [] args) {
+    public void execute() {
         long op1 = Long.parseLong("3000");
         long op2 = Long.parseLong("3");
         wtr.showResult("The result of " + op1 + ops.getOpsName() + op2 + " is " + ops.operate(op1, op2) + "!");

@@ -1,11 +1,13 @@
 package com.springinaction.springidol;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * Created by y.voytovich on 18.12.2014.
  */
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 
 public class Juggler implements Performer {
     private int beanBags = 3;
